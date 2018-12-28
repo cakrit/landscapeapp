@@ -1,6 +1,6 @@
 {
   "name": "@netdata/interactive-landscape",
-  "version": "1.0.44",
+  "version": "1.0.45",
   "description": "Visualization tool for building interactive landscapes",
   "engines": {
     "npm": ">=3",
@@ -23,7 +23,7 @@
     "start-ci": "(babel-node tools/ciServer &) && sleep 10",
     "stop-old-ci": "(kill -9 `ps ux | grep ciServer | grep -v grep | awk -F ' ' '{print $2}'` 2>/dev/null || true)",
     "stop-ci": "kill -9 `cat /tmp/ci.pid` && rm /tmp/ci.pid",
-    "integration-test": "../jest",
+    "integration-test": "jest",
     "check-landscape": "babel-node tools/checkLandscape",
     "render-landscape": "babel-node tools/renderLandscape",
     "copy-dist": "cp -r _headers _redirects \"$PROJECT_PATH\"/data.json \"$PROJECT_PATH\"/images src/embed.html \"$PROJECT_PATH\"/dist/ && cp -r \"$PROJECT_PATH\"/cached_logos \"$PROJECT_PATH\"/dist/logos",
@@ -180,7 +180,7 @@
   "jest": {
     "haste": {
       "providesModuleNodeModules": [
-        "interactive-landscape"
+        "@netdata/interactive-landscape"
       ]
     },
     "testPathIgnorePatterns": [
