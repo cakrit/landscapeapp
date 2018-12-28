@@ -1,6 +1,6 @@
 {
   "name": "@netdata/interactive-landscape",
-  "version": "1.0.46",
+  "version": "1.0.47",
   "description": "Visualization tool for building interactive landscapes",
   "engines": {
     "npm": ">=3",
@@ -175,7 +175,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cakrit/landscapeapp.git"
+    "url": "https://github.com/cakrit/landscapeapp.git"
   },
   "jest": {
     "haste": {
@@ -199,10 +199,5 @@
   },
   "devDependencies": {
     "postinstall-prepare": "1.0.1"
-  },
-  "bugs": {
-    "url": "https://github.com/cakrit/landscapeapp/issues"
-  },
-  "homepage": "https://github.com/cakrit/landscapeapp#readme",
-  "main": "webpack.config.dev.js"
+  }
 }
